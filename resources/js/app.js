@@ -25,7 +25,15 @@ Vue.use(VueRouter);
 
 Vue.prototype.$http = axios.create();
 
-window.Horizon.basePath = "/marketplace/" + window.Horizon.path;
+//To support horizon in subdirectory
+let path_name = window.location.pathname;
+let paths = path_name.split("/");
+
+if (paths[1] === "marketplace") {
+    window.Horizon.basePath = "/marketplace/" + window.Horizon.path;
+} else {
+    window.Horizon.basePath = '/' + window.Horizon.path;
+}
 
 let routerBasePath = window.Horizon.basePath + '/';
 
