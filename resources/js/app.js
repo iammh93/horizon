@@ -25,7 +25,7 @@ Vue.use(VueRouter);
 
 Vue.prototype.$http = axios.create();
 
-window.Horizon.basePath = '/' + window.Horizon.path;
+window.Horizon.basePath = "/marketplace/" + window.Horizon.path;
 
 let routerBasePath = window.Horizon.basePath + '/';
 
