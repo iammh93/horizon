@@ -25,11 +25,12 @@
         "popper.js": "^1.12",
         "resolve-url-loader": "^2.3.1",
         "sass": "^1.26.3",
-        "sass-loader": "^7.1.0",
+        "sass-loader": "^10.0.0",
         "sql-formatter": "^2.3.1",
-        "vue": "^2.5.7",
+        "vue": "^2.6.14",
         "vue-json-pretty": "^1.4.1",
+        "vue-loader": "^15.9.6",
         "vue-router": "^3.0.1",
-        "vue-template-compiler": "^2.5.21"
+        "vue-template-compiler": "^2.6.14"
     }
 }
